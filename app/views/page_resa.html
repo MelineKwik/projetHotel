@@ -1,0 +1,35 @@
+<h1 style="font-family:Lobster, Arial"><i class="fab fa-wpforms"> </i>  FORMULAIRE DE RESERVATION </h1>
+<h2 style="position:center; font-family: 'Playfair Display', serif;" ng-controller="CtrlDatePicker">Vous avez choisi l'hotel le {{etablissement.nomEtablissement}} </h2>
+<BR>
+
+<form method="" >
+
+<!-- n° resa -->
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label" 	style="font-family: 'Oxygen', sans-serif;">Numéro de réservation</label>
+  <div class="col-10">
+    <input class="form-control" type="text" placeholder="n° 0158878" id="example-text-input">
+  </div>
+</div>
+
+<!-- Date reservation A -->
+<div class="form-group row">
+  <label for="example-datetime-local-input" class="col-2 col-form-label" 	style="font-family: 'Oxygen', sans-serif;">Date d'arrivé</label>
+  <div class="col-10">
+    <input class="form-control" type="datetime-local" placeholder="2011-08-19T13:45:00" id="example-datetime-local-input">
+  </div>
+</div>
+
+
+<!-- Date reservation D -->
+<div class="form-group row">
+  <label for="example-datetime-local-input" class="col-2 col-form-label" style="font-family: 'Oxygen', sans-serif;">Date de retour</label>
+  <div class="col-10">
+    <input class="form-control" type="datetime-local" placeholder="2011-08-19T13:45:00" id="example-datetime-local-input">
+  </div>
+</div>
+
+<div class="form-group row">
+  <button type="button" class="btn btn-success"   style="font-family: 'Oxygen', sans-serif;">Réserver mon hébergement !</button>
+</div>
+</form>

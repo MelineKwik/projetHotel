@@ -1,0 +1,68 @@
+<!-- Titre -->
+<div  ng-controller="CtrlDatePicker">
+<h1 style="font-family:Lobster, Arial"><i class="fab fa-wpforms"> </i>  IDENTIFIEZ VOUS AVANT DE RESERVER </h1>
+<h2 style="position:center; font-family: 'Playfair Display', serif;" >Vous avez choisi l'hotel le {{etablissement.nomEtablissement}} </h2>
+<BR>
+
+
+
+
+<form name="formAdd">
+<!-- Nom -->
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label" 	style="font-family: 'Oxygen', sans-serif;">Nom</label>
+
+
+
+  <div class="col-10">
+    <input class="form-control" type="text" placeholder="André" id="example-text-input" ng-bind="myText">
+  </div>
+</div>
+<p>{{myText}}</p>
+
+
+<!-- Prenom -->
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label" 	style="font-family: 'Oxygen', sans-serif;">Prenom</label>
+  <div class="col-10">
+    <input class="form-control" type="text" placeholder="Pierre" id="example-text-input" ng-bind="prenom">
+  </div>
+</div>
+
+<div class="form-group row">
+  <label for="example-text-input" class="col-2 col-form-label"  style="font-family: 'Oxygen', sans-serif;">Date de naissance</label>
+  <div class="col-10">
+    <input class="form-control" type="datetime-local" placeholder="2011-08-19T13:45:00" id="example-datetime-local-input" ng-bind="naissance">
+  </div>
+</div>
+
+
+
+<!-- Email -->
+<div class="form-group row">
+  <label for="example-email-input" class="col-2 col-form-label" 	style="font-family: 'Oxygen', sans-serif;">Adresse</label>
+  <div class="col-10">
+    <input class="form-control" type="text" placeholder=" Rue" id="example-email-input" ng-bind="adresse">
+  </div>
+</div>
+
+<!-- Numero de tel -->
+<div class="form-group row">
+  <label for="example-tel-input" class="col-2 col-form-label" 	style="font-family: 'Oxygen', sans-serif;">Telephone</label>
+  <div class="col-10">
+    <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="example-tel-input" ng-bind="numero">
+  </div>
+</div>
+
+
+
+
+<!--bouton-->
+<div class="form-group row">
+  <button   class="btn btn-success"  style="font-family: 'Oxygen', sans-serif;" ng-click="addClient()">Valider</button>
+	
+</div>
+</form>
+</div>
+
+
